@@ -1,4 +1,6 @@
 import enc from "/enc.jpg"
+import { Link } from 'react-router-dom';
+
 
 export const Header = () =>
 {
@@ -25,14 +27,24 @@ export const Header = () =>
             </p>
           </div>
           <div className="flex flex-col items-center md:flex-row">
-            <a
-              href="/encryption"
+            {/* <a
+              href="/"
                           className="inline-flex items-center justify-center w-full p-4 mb-3 font-medium 
                 tracking-wide text-white transition duration-200 rounded-lg shadow-md md:w-auto md:mr-4 md:mb-0 bg-purple-600 hover:bg-purple-700 focus:shadow-outline focus:outline-none"
             >
               <span className="">Get Started</span>
               
-            </a>
+            </a> */}
+            <div className="inline-flex items-center justify-center w-full p-4 mb-3 font-medium
+                tracking-wide text-white transition duration-200 rounded-lg shadow-md md:w-auto
+                 md:mr-4 md:mb-0 bg-purple-600 hover:bg-purple-700 focus:shadow-outline focus:outline-none">
+              <Link to="/encryption"
+                >
+                
+          <span className="">Get Started</span>
+        </Link>
+
+            </div>
            
           </div>
         </div>
