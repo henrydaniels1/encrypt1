@@ -26,7 +26,7 @@ export const Header = () =>
           </div>
           <div className="flex flex-col items-center md:flex-row">
             <a
-              href="/"
+              href="/encryption"
                           className="inline-flex items-center justify-center w-full p-4 mb-3 font-medium 
                 tracking-wide text-white transition duration-200 rounded-lg shadow-md md:w-auto md:mr-4 md:mb-0 bg-purple-600 hover:bg-purple-700 focus:shadow-outline focus:outline-none"
             >
