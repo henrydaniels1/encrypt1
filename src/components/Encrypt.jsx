@@ -103,24 +103,24 @@ const Encrypt = () => {
 
         {/* Results Section */ }
         <div className="sm:w-full">
-        <div className=" rounded-xl p-4 md:p-6 shadow-md text-gray-800 bg-white space-y-6">
+        <div className=" rounded-xl p-3 md:p-6 shadow-md text-gray-800 bg-white space-y-6">
           <h3 className="text-3xl font-semibold mb-6">Results Overview</h3>
           <div className="grid grid-cols-2 gap-4 md:gap-8">
-            <div className="bg-gradient-to-r from-purple-100 to-pink-100 p-6 rounded-lg">
-              <h4 className="text-lg font-bold">Plaintext Size</h4>
-              <p className="md:text-3xl text-2xl font-bold text-gray-800">{plaintextSize} bytes</p>
+            <div className="bg-gradient-to-r from-purple-100 to-pink-100 py-6  rounded-lg flex items-center justify-center flex-col">
+              <h4 className="text-lg font-bold">Plaintext Size</h4><br/>
+              <p className="md:text-3xl text-xl font-bold text-gray-800">{plaintextSize} bytes</p>
             </div>
-            <div className="bg-gradient-to-r from-purple-100 to-pink-100 p-6 rounded-lg">
-              <h4 className="text-lg font-bold">Ciphertext Size</h4>
-              <p className="md:text-3xl text-2xl font-bold text-gray-800">{ciphertextSize} bytes</p>
+            <div className="bg-gradient-to-r from-purple-100 to-pink-100 py-6  rounded-lg flex items-center justify-center flex-col">
+              <h4 className="text-lg font-bold">Ciphertext Size</h4><br/>
+              <p className="md:text-3xl text-xl font-bold text-gray-800">{ciphertextSize} bytes</p>
             </div>
-            <div className="bg-gradient-to-r from-green-100 to-blue-100 p-6 rounded-lg">
-              <h4 className="text-lg font-bold">Encryption Time</h4>
-              <p className="md:text-3xl text-2xl font-bold text-gray-800">{encryptionTime.toFixed(2)} ms</p>
+            <div className="bg-gradient-to-r from-green-100 to-blue-100 py-6  rounded-lg flex items-center justify-center flex-col">
+              <h4 className="text-lg font-bold">Encryption Time</h4><br/>
+              <p className="md:text-3xl text-xl font-bold text-gray-800">{encryptionTime.toFixed(2)} ms</p>
             </div>
-            <div className="bg-gradient-to-r from-green-100 to-blue-100 p-6 rounded-lg">
-              <h4 className="text-lg font-bold">Decryption Time</h4>
-              <p className="md:text-3xl text-2xl font-bold text-gray-800">{decryptionTime.toFixed(2)} ms</p>
+            <div className="bg-gradient-to-r from-green-100 to-blue-100 py-6  rounded-lg flex items-center justify-center flex-col">
+              <h4 className="md:text-lg text-base font-bold">Decryption Time</h4><br/>
+              <p className="md:text-3xl text-xl font-bold text-gray-800">{decryptionTime.toFixed(2)} ms</p>
             </div>
           </div></div>
         </div>
