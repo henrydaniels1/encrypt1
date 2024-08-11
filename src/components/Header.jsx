@@ -20,13 +20,14 @@ export const Header = () => {
               Effortlessly encrypt and decrypt your sensitive data with our easy-to-use online tool.
             </p>
           </div>
+              <Link to="/encryption">
           <div className="animate-slidein ... inline-flex items-center justify-center w-full p-4 mb-3 font-medium
               tracking-wide text-white transition duration-200 rounded-lg md:w-auto
               md:mr-4 md:mb-0 bg-purple-600 hover:bg-purple-700 focus:shadow-outline focus:outline-none">
-            <Link to="/encryption">
+        
               <span className="">Get Started</span>
-            </Link>
-          </div>
+            
+          </div></Link>
         </div>
         <div className="relative lg:w-1/2 w-full md:w-[90%]">
           <img className="object-cover w-full h-56 rounded sm:h-[30rem]" src={enc} alt=""/>
