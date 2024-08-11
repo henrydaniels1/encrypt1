@@ -11,34 +11,34 @@ export const Footer = () => {
               <ul className="mt-2 space-y-2">
                 <li>
                   <a
-                    href="/"
+                    href="https://www.internetsociety.org/learning/encryption/?gad_source=1&gclid=Cj0KCQjwwuG1BhCnARIsAFWBUC0JMA4MRXNcMxKjL5QEU4d3KYKVBcaPLAstlImZ__q4VnM5Ew3TLz4aAm9WEALw_wcB"
                     className="text-gray-500 transition-colors duration-300 hover:text-purple-200"
                   >
-                    News
+                    Encryption Basics
                   </a>
                 </li>
                 <li>
                   <a
-                    href="/"
+                    href="https://intellipaat.com/blog/what-is-decryption/"
                     className="text-gray-500 transition-colors duration-300 hover:text-purple-200"
                   >
-                    World
+                     Decryption Basics
                   </a>
                 </li>
                 <li>
                   <a
-                    href="/"
+                    href="https://cpl.thalesgroup.com/faq/key-secrets-management/what-encryption-key-management"
                     className="text-gray-500 transition-colors duration-300 hover:text-purple-200"
                   >
-                    Games
+                    Key management
                   </a>
                 </li>
                 <li>
                   <a
-                    href="/"
+                    href="https://www.keyfactor.com/education-center/types-of-encryption-algorithms/"
                     className="text-gray-500 transition-colors duration-300 hover:text-purple-200"
                   >
-                    References
+                    Encryption Algorithms
                   </a>
                 </li>
               </ul>
@@ -48,34 +48,34 @@ export const Footer = () => {
               <ul className="mt-2 space-y-2">
                 <li>
                   <a
-                    href="/"
+                    href="https://www.goanywhere.com/solutions/file-encryption#:~:text=What%20is%20File%20Encryption%3F&text=Encryption%20is%20a%20method%20of,depending%20on%20the%20method%20used."
                     className="text-gray-500 transition-colors duration-300 hover:text-purple-200"
                   >
-                    Web
+                    File Encryption
                   </a>
                 </li>
                 <li>
                   <a
-                    href="/"
+                    href="https://www.mimecast.com/content/encrypted-messaging/"
                     className="text-gray-500 transition-colors duration-300 hover:text-purple-200"
                   >
-                    eCommerce
+                    Message Encryption
                   </a>
                 </li>
                 <li>
                   <a
-                    href="/"
+                    href="https://www.locklizard.com/web-page-encryption/"
                     className="text-gray-500 transition-colors duration-300 hover:text-purple-200"
                   >
-                    Business
+                    Web Encryption
                   </a>
                 </li>
                 <li>
                   <a
-                    href="/"
+                    href="https://www.npmjs.com/package/crypto-js"
                     className="text-gray-500 transition-colors duration-300 hover:text-purple-200"
                   >
-                    Entertainment
+                    Encryption Tools
                   </a>
                 </li>
                 
@@ -89,7 +89,7 @@ export const Footer = () => {
                     href="/"
                     className="text-gray-500 transition-colors duration-300 hover:text-purple-200"
                   >
-                    Media
+                    File Decryption
                   </a>
                 </li>
                 <li>
@@ -97,23 +97,23 @@ export const Footer = () => {
                     href="/"
                     className="text-gray-500 transition-colors duration-300 hover:text-purple-200"
                   >
-                    Brochure
+                    Message Decryption
                   </a>
                 </li>
                 <li>
                   <a
-                    href="/"
+                    href="https://www.qacafe.com/resources/tips-for-analyzing-encrypted-data/"
                     className="text-gray-500 transition-colors duration-300 hover:text-purple-200"
                   >
-                    Nonprofit
+                     Troubleshooting
                   </a>
                 </li>
                 <li>
                   <a
-                    href="/"
+                    href="https://www.npmjs.com/package/crypto-js"
                     className="text-gray-500 transition-colors duration-300 hover:text-purple-200"
                   >
-                    Educational
+                    Decryption Tools
                   </a>
                 </li>
                
@@ -126,34 +126,34 @@ export const Footer = () => {
               <ul className="mt-2 space-y-2">
                 <li>
                   <a
-                    href="/"
+                    href="https://www.1kosmos.com/blockchain/symmetric-encryption/"
                     className="text-gray-500 transition-colors duration-300 hover:text-purple-200"
                   >
-                    Entrepreneur
+                    Symmetric
                   </a>
                 </li>
                 <li>
                   <a
-                    href="/"
+                    href="https://www.techtarget.com/searchsecurity/definition/asymmetric-cryptography"
                     className="text-gray-500 transition-colors duration-300 hover:text-purple-200"
                   >
-                    Personal
+                  Asymmetric
                   </a>
                 </li>
                 <li>
                   <a
-                    href="/"
+                    href="https://www.passcamp.com/blog/data-encryption-standards-what-you-need-to-know/"
                     className="text-gray-500 transition-colors duration-300 hover:text-purple-200"
                   >
-                    Wiki
+                      Encryption Standards
                   </a>
                 </li>
                 <li>
                   <a
-                    href="/"
+                    href="https://www.youtube.com/results?search_query=encryption+and+decryption"
                     className="text-gray-500 transition-colors duration-300 hover:text-purple-200"
                   >
-                    Forum
+                    Resources & Tutorials
                   </a>
                 </li>
               </ul>
