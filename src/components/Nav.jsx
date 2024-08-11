@@ -145,46 +145,46 @@ export const Nav = () => {
                     </div>
                   </div>
                   <nav>
-                    <ul className="space-y-4">
-                      <li className='hover:bg-teal-50'>
+                    <div className="space-y-4 z-10 flex flex-col">
+                     
                         <Link
                           to="/"
                           aria-label="Home"
                           title="Home"
-                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-purple-400"
+                          className="font-medium hover:bg-teal-50 tracking-wide text-gray-700 transition-colors duration-200 hover:text-purple-400"
                         >
                           Home
                         </Link>
-                      </li>
-                      <li className='hover:bg-teal-50'>
+                     
+                      
                         <Link
-                          to="/features"
+                          to="/feature"
                           aria-label="Features"
                           title="Features"
-                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-purple-400"
+                          className="font-medium hover:bg-teal-50 tracking-wide text-gray-700 transition-colors duration-200 hover:text-purple-400"
                         >
                           Features
                         </Link>
-                      </li>
-                      <li className='hover:bg-teal-50'>
+                     
+                     
                         <Link
                           to="/blog"
                           aria-label="Blog"
                           title="Blog"
-                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-purple-400"
+                          className="font-medium hover:bg-teal-50 tracking-wide text-gray-700 transition-colors duration-200 hover:text-purple-400"
                         >
                           Blog
                         </Link>
-                      </li>
-                      <li>
+                    
+                     
                         <Link
                           to="/encryption"
                           className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-purple-600 hover:bg-purple-700 focus:shadow-outline focus:outline-none"
                         >
                           Get Started
                         </Link>
-                      </li>
-                    </ul>
+                     
+                    </div>
                   </nav>
                 </div>
               </div>

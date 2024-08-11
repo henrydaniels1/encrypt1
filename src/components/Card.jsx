@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 export const Card = ({ imageSrc, date, title, description, likes, comments }) => {
   return (
-    <div className="overflow-hidden transition-shadow duration-300 bg-white rounded">
+    <div className="overflow-hidden transition-shadow duration-300 bg-white rounded -z-20">
       <a href="/" aria-label="Article">
         <img
           src={imageSrc}
