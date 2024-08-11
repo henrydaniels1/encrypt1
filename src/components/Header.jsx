@@ -57,7 +57,7 @@ export const Header = () =>
           </div>
         </div>
         <div className="relative lg:w-1/2 w-full md:w-[90%]">
-            <img className="object-cover w-full h-56 rounded shadow-lg sm:h-[30rem]"
+            <img className="object-cover w-full h-56 rounded-lg sm:h-[30rem]"
             src={enc}
             alt=""/>
         </div>
