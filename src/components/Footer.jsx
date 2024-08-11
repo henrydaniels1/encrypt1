@@ -143,7 +143,7 @@ export const Footer = () => {
                     href="/"
                     className="text-gray-500 transition-colors duration-300 hover:text-purple-200"
                   >
-                    Infopreneur
+                    Entrepreneur
                   </a>
                 </li>
                 <li>

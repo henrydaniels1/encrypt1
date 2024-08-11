@@ -1,12 +1,8 @@
 /* eslint-disable react/prop-types */
-<<<<<<< HEAD
 import { useState } from 'react';
-=======
-import { useEffect, useState } from "react";
-import { motion, useAnimation } from "framer-motion";
->>>>>>> a2b22e89eac8b72c921d2286b673a5a1555a54c5
 
-const Item = ({ title, children }) => {
+const Item = ( { title, children } ) =>
+{
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -23,7 +19,7 @@ const Item = ({ title, children }) => {
           <svg
             viewBox="0 0 24 24"
             className={`w-3 text-gray-600 transition-transform duration-200 ${
-              isOpen ? "transform rotate-180" : ""
+              isOpen ? 'transform rotate-180' : ''
             }`}
           >
             <polyline
@@ -48,44 +44,11 @@ const Item = ({ title, children }) => {
 };
 
 export const Faq = () => {
-  const controls = useAnimation();
-
-  useEffect(() => {
-    const handleScroll = () => {
-      controls.start({
-        opacity: 1,
-        y: 0,
-        transition: { duration: 0.8, ease: "easeOut" },
-      });
-
-      setTimeout(() => {
-        controls.start({
-          opacity: 0.8,
-          y: -10,
-          transition: { duration: 1, ease: "easeOut" },
-        });
-      }, 100);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [controls]);
-
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={controls}
-      className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20"
-    >
+    <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
       <div className="max-w-xl sm:mx-auto lg:max-w-2xl">
         <div className="flex flex-col mb-16 sm:text-center">
-<<<<<<< HEAD
        
-=======
->>>>>>> a2b22e89eac8b72c921d2286b673a5a1555a54c5
           <div className="max-w-xl md:mx-auto sm:text-center lg:max-w-2xl">
             <h2 className="max-w-lg mb-3 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
               <span className="relative inline-block">
@@ -112,47 +75,42 @@ export const Faq = () => {
                   />
                 </svg>
                 <span className="relative">FAQ</span>
-              </span>{" "}
+              </span>{' '}
               (Frequently Asked Questions)
             </h2>
-<<<<<<< HEAD
            
-=======
->>>>>>> a2b22e89eac8b72c921d2286b673a5a1555a54c5
           </div>
         </div>
-        <div className="space-y-4">
-          <div className="hover:bg-teal-50 rounded">
-            <Item title="What is encryption?">
-              Encryption is the process of converting plain, readable data
-              (plaintext) into an encoded format (ciphertext) that is unreadable
-              to unauthorized users.
-            </Item>
-          </div>
-          <div className="hover:bg-teal-50 rounded">
-            <Item title="What is decryption?">
-              Decryption is the process of converting the encoded data
-              (ciphertext) back into its original, readable format (plaintext).
-            </Item>
-          </div>
-          <div className="hover:bg-teal-50 rounded">
-            <Item title="How do I encrypt my data?">
-              On the encryption page, locate the text input field.
-              <br />
-              Type your plaintext (the data you want to encrypt) into this
-              field.
-            </Item>
-          </div>
-          <div className="hover:bg-teal-50 rounded">
-            <Item title="How do I decrypt my data?">
-              On the decryption page, locate the text input field.
-              <br />
-              Type or paste the ciphertext (the data you want to decrypt) into
-              this field.
-            </Item>
-          </div>
+              <div className="space-y-4">
+                  <div className='hover:bg-teal-50 rounded'>
+                       <Item title="What is encryption?">
+                      Encryption is the process of converting plain, readable data (plaintext)
+             into an encoded format (ciphertext) that is unreadable to unauthorized users.
+          </Item>
+                  </div>
+                  <div  className='hover:bg-teal-50 rounded'>
+                     <Item title="What is decryption?">
+                      Decryption is the process of converting the encoded data (ciphertext)
+                      back into its original, readable format (plaintext).
+                  </Item> 
+         </div>
+          
+                  <div  className='hover:bg-teal-50 rounded'>
+                      <Item title="How do I encrypt my data?">
+On the encryption page, locate the text input field.<br/>
+Type your plaintext (the data you want to encrypt) into this field.
+                  </Item> 
+                  </div>
+         
+                  <div  className='hover:bg-teal-50 rounded'>
+                    <Item title="How do I decrypt my data?">
+           On the decryption page, locate the text input field.<br/>
+Type or paste the ciphertext (the data you want to decrypt) into this field.
+          </Item>   
+                  </div>
+         
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
