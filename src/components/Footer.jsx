@@ -2,7 +2,7 @@ export const Footer = () => {
   return (
     <div className="bg-gray-900">
       <div className="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 ">
-        <div className="grid row-gap-14 mb-8 lg:grid-cols-6">
+        <div className="grid row-gap-10 mb-8 lg:grid-cols-6">
           <div className="grid grid-cols-2 gap-5 row-gap-8 lg:col-span-4 md:grid-cols-4">
             <div>
               <p className="font-medium tracking-wide text-gray-300">
@@ -14,8 +14,7 @@ export const Footer = () => {
                     href="/"
                     className="text-gray-500 transition-colors duration-300 hover:text-purple-200"
                   >
-                    Encryption Basics
-
+                    News
                   </a>
                 </li>
                 <li>
@@ -23,7 +22,7 @@ export const Footer = () => {
                     href="/"
                     className="text-gray-500 transition-colors duration-300 hover:text-purple-200"
                   >
-                    Decryption Basics
+                    World
                   </a>
                 </li>
                 <li>
@@ -31,8 +30,7 @@ export const Footer = () => {
                     href="/"
                     className="text-gray-500 transition-colors duration-300 hover:text-purple-200"
                   >
-                    Key Management
-
+                    Games
                   </a>
                 </li>
                 <li>
@@ -40,8 +38,7 @@ export const Footer = () => {
                     href="/"
                     className="text-gray-500 transition-colors duration-300 hover:text-purple-200"
                   >
-                    Encryption Algorithms
-
+                    References
                   </a>
                 </li>
               </ul>
@@ -54,8 +51,7 @@ export const Footer = () => {
                     href="/"
                     className="text-gray-500 transition-colors duration-300 hover:text-purple-200"
                   >
-                    File Encryption
-
+                    Web
                   </a>
                 </li>
                 <li>
@@ -63,8 +59,7 @@ export const Footer = () => {
                     href="/"
                     className="text-gray-500 transition-colors duration-300 hover:text-purple-200"
                   >
-                    Message Encryption
-
+                    eCommerce
                   </a>
                 </li>
                 <li>
@@ -72,8 +67,7 @@ export const Footer = () => {
                     href="/"
                     className="text-gray-500 transition-colors duration-300 hover:text-purple-200"
                   >
-                    Web Encryption
-
+                    Business
                   </a>
                 </li>
                 <li>
@@ -81,11 +75,17 @@ export const Footer = () => {
                     href="/"
                     className="text-gray-500 transition-colors duration-300 hover:text-purple-200"
                   >
-                    Data-at-Rest Encryption
-
+                    Entertainment
                   </a>
                 </li>
-                
+                {/* <li>
+                  <a
+                    href="/"
+                    className="text-gray-500 transition-colors duration-300 hover:text-purple-200"
+                  >
+                    Portfolio
+                  </a>
+                </li> */}
               </ul>
             </div>
             <div>
@@ -96,8 +96,7 @@ export const Footer = () => {
                     href="/"
                     className="text-gray-500 transition-colors duration-300 hover:text-purple-200"
                   >
-                    File Decryption
-
+                    Media
                   </a>
                 </li>
                 <li>
@@ -105,8 +104,7 @@ export const Footer = () => {
                     href="/"
                     className="text-gray-500 transition-colors duration-300 hover:text-purple-200"
                   >
-                    Message Decryption
-
+                    Brochure
                   </a>
                 </li>
                 <li>
@@ -114,8 +112,7 @@ export const Footer = () => {
                     href="/"
                     className="text-gray-500 transition-colors duration-300 hover:text-purple-200"
                   >
-                    Web Decryption
-
+                    Nonprofit
                   </a>
                 </li>
                 <li>
@@ -123,20 +120,22 @@ export const Footer = () => {
                     href="/"
                     className="text-gray-500 transition-colors duration-300 hover:text-purple-200"
                   >
-                    Data-in-Transit Decryption
-
+                    Educational
                   </a>
                 </li>
-                
+                {/* <li>
+                  <a
+                    href="/"
+                    className="text-gray-500 transition-colors duration-300 hover:text-purple-200"
+                  >
+                    Projects
+                  </a>
+                </li> */}
               </ul>
             </div>
             <div>
               <p className="font-medium tracking-wide text-gray-300">
-<<<<<<< HEAD
                 Cipher
-=======
-                Security
->>>>>>> a2b22e89eac8b72c921d2286b673a5a1555a54c5
               </p>
               <ul className="mt-2 space-y-2">
                 <li>
@@ -144,8 +143,7 @@ export const Footer = () => {
                     href="/"
                     className="text-gray-500 transition-colors duration-300 hover:text-purple-200"
                   >
-                    2FA
-
+                    Infopreneur
                   </a>
                 </li>
                 <li>
@@ -153,8 +151,7 @@ export const Footer = () => {
                     href="/"
                     className="text-gray-500 transition-colors duration-300 hover:text-purple-200"
                   >
-                    SSL/TLS Certificates
-
+                    Personal
                   </a>
                 </li>
                 <li>
@@ -162,8 +159,7 @@ export const Footer = () => {
                     href="/"
                     className="text-gray-500 transition-colors duration-300 hover:text-purple-200"
                   >
-                    Data Integrity
-
+                    Wiki
                   </a>
                 </li>
                 <li>
@@ -171,8 +167,7 @@ export const Footer = () => {
                     href="/"
                     className="text-gray-500 transition-colors duration-300 hover:text-purple-200"
                   >
-                    Privacy Policies
-
+                    Forum
                   </a>
                 </li>
               </ul>
@@ -196,12 +191,15 @@ export const Footer = () => {
                 Subscribe
               </button>
             </form>
-            
+            {/* <p className="mt-4 text-sm text-gray-500">
+              Bacon ipsum dolor amet short ribs pig sausage prosciuto chicken
+              spare ribs salami.
+            </p> */}
           </div>
         </div>
         <div className="flex flex-col justify-between pt-5 pb-10 border-t border-gray-800 sm:flex-row">
           <p className="text-sm text-gray-500">
-            © Copyright 2024 Henry-Daniel All rights reserved.
+            © Copyright 2020 Henry-Daniel. All rights reserved.
           </p>
           <div className="flex items-center mt-4 space-x-4 sm:mt-0">
             <a
