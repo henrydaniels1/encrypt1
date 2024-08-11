@@ -85,14 +85,7 @@ export const Footer = () => {
 
                   </a>
                 </li>
-                {/* <li>
-                  <a
-                    href="/"
-                    className="text-gray-500 transition-colors duration-300 hover:text-purple-200"
-                  >
-                    Portfolio
-                  </a>
-                </li> */}
+                
               </ul>
             </div>
             <div>
@@ -134,14 +127,7 @@ export const Footer = () => {
 
                   </a>
                 </li>
-                {/* <li>
-                  <a
-                    href="/"
-                    className="text-gray-500 transition-colors duration-300 hover:text-purple-200"
-                  >
-                    Projects
-                  </a>
-                </li> */}
+                
               </ul>
             </div>
             <div>
@@ -206,10 +192,7 @@ export const Footer = () => {
                 Subscribe
               </button>
             </form>
-            {/* <p className="mt-4 text-sm text-gray-500">
-              Bacon ipsum dolor amet short ribs pig sausage prosciuto chicken
-              spare ribs salami.
-            </p> */}
+            
           </div>
         </div>
         <div className="flex flex-col justify-between pt-5 pb-10 border-t border-gray-800 sm:flex-row">
