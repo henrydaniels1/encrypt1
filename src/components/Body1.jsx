@@ -91,10 +91,9 @@ export const Feature = () => {
                 />
               </svg>
             </div>
-            <h6 className="mb-2 font-semibold leading-5">RSA Encryption</h6>
+            <h6 className="mb-2 font-semibold leading-5">Real-Time Data Processing</h6>
             <p className="mb-3 text-sm text-gray-900">
-              Securely encrypt sensitive data using RSA, a robust asymmetric encryption algorithm.
-            </p>
+Encrypt and decrypt your data in real-time with minimal latency, providing seamless security without compromising performance.            </p>
           </div>
           <a
             href="https://www.techtarget.com/searchsecurity/definition/RSA"
@@ -122,7 +121,7 @@ export const Feature = () => {
                 />
               </svg>
             </div>
-            <h6 className="mb-2 font-semibold leading-5">Data Decryption</h6>
+            <h6 className="mb-2 font-semibold leading-5">AES-128 Decryption</h6>
             <p className="mb-3 text-sm text-gray-900">
              Effortlessly decrypt your encrypted data with our user-friendly decryption tools.
             </p>
