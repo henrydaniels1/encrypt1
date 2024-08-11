@@ -63,7 +63,7 @@ export const Feature = () => {
             </p>
           </div>
           <a
-            href="/"
+            href="https://www.techtarget.com/searchsecurity/definition/Advanced-Encryption-Standard"
             aria-label=""
             className="inline-flex items-center font-semibold transition-colors duration-200 text-purple-400 hover:text-purple-800"
           >
@@ -93,7 +93,7 @@ export const Feature = () => {
             </p>
           </div>
           <a
-            href="/"
+            href="https://www.techtarget.com/searchsecurity/definition/RSA"
             aria-label=""
             className="inline-flex items-center font-semibold transition-colors duration-200 text-purple-400 hover:text-purple-800"
           >
@@ -123,7 +123,7 @@ export const Feature = () => {
             </p>
           </div>
           <a
-            href="/"
+            href="https://www.digitalguardian.com/blog/what-data-encryption#:~:text=Data%20encryption%20translates%20data%20into,unencrypted%20data%20is%20called%20plaintext."
             aria-label=""
             className="inline-flex items-center font-semibold transition-colors duration-200 text-purple-400 hover:text-purple-800"
           >
@@ -153,7 +153,7 @@ export const Feature = () => {
             </p>
           </div>
           <a
-            href="/"
+            href="https://www.precisely.com/blog/data-security/data-encryption-101-guide-best-practices"
             aria-label=""
             className="inline-flex items-center font-semibold transition-colors duration-200 text-purple-400 hover:text-purple-800"
           >
