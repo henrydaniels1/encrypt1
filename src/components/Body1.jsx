@@ -40,7 +40,9 @@ export const Feature = () => {
         </p>
       </div>
       <div className="grid gap-4 row-gap-5 sm:grid-cols-2 lg:grid-cols-4 ">
-{/* added animate-slidein ... */}
+        
+        {/* added animate-slidein ... */ }
+        
         <div className=" animate-slidein ...  flex flex-col justify-between p-5 border rounded shadow-sm hover:bg-teal-50">
           <div className="">
             <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50 ">

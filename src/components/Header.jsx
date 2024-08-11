@@ -1,6 +1,7 @@
-import enc from '/enc.jpg';
+// import enc from '/enc.jpg';
+import enc from '/enc4.jpg';
 import { Link } from 'react-router-dom';
-// import { motion } from 'framer-motion';
+
 
 export const Header = () => {
   return (
