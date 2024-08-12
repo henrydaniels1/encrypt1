@@ -43,8 +43,8 @@ const Encrypt = () => {
 
   return (
     <div className="p-4 md:p-8 w-full mx-auto bg-gray-900 text-white">
-      <h1 className="lg:text-5xl md:text-4xl text-3xl font-extrabold text-center mb-10">
-        🔐 Secure Encrypt & Decrypt Tool
+      <h1 className="lg:text-5xl md:text-4xl text-2xl font-extrabold text-center mb-10">
+        🔐 Secure Encryption & Decryption Tool
       </h1>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 w-full ">
