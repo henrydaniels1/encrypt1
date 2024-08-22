@@ -1,9 +1,8 @@
 import { useState } from 'react';
 import CryptoJS from 'crypto-js';
-import { Link } from 'react-router-dom';
 
 
-const Encrypt = () => {
+const Des = () => {
   const [text, setText] = useState('');
   const [encryptedText, setEncryptedText] = useState('');
   const [decryptedText, setDecryptedText] = useState('');
@@ -12,7 +11,7 @@ const Encrypt = () => {
   const [decryptionTime, setDecryptionTime] = useState(0);
   const [plaintextSize, setPlaintextSize] = useState(0);
   const [ciphertextSize, setCiphertextSize] = useState(0);
-  const key = 'mysecretkey12345'; // 128-bit key
+  const key = CryptoJS.enc.Utf8.parse('mysecretkey12345'); // 64-bit key (DES key length)
   const iv = CryptoJS.enc.Hex.parse('1234567890123456'); // 16-byte IV
 
   const calculateTextSize = (text) => new Blob([text]).size;
@@ -26,7 +25,7 @@ const Encrypt = () => {
 
   const encrypt = () => {
     const time = measureTime(() => {
-      const encrypted = CryptoJS.AES.encrypt(text, CryptoJS.enc.Utf8.parse(key), { iv }).toString();
+      const encrypted = CryptoJS.DES.encrypt(text, key, { iv }).toString();
       setEncryptedText(encrypted);
       setCiphertextSize(calculateTextSize(encrypted));
     });
@@ -36,7 +35,7 @@ const Encrypt = () => {
 
   const decrypt = () => {
     const time = measureTime(() => {
-      const bytes = CryptoJS.AES.decrypt(encryptedInput, CryptoJS.enc.Utf8.parse(key), { iv });
+      const bytes = CryptoJS.DES.decrypt(encryptedInput, key, { iv });
       const decrypted = bytes.toString(CryptoJS.enc.Utf8);
       setDecryptedText(decrypted);
     });
@@ -46,14 +45,14 @@ const Encrypt = () => {
   return (
     <div className="p-4 md:p-8 w-full mx-auto bg-gray-900 text-white">
       <h1 className="lg:text-5xl md:text-4xl text-2xl font-extrabold text-center mb-10">
-        🔐 Secure AES Encryption & Decryption Tool
+        🔐 Secure DES Encryption & Decryption Tool
       </h1>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 w-full ">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 w-full">
         {/* Encryption & Decryption Section */}
         <div className="space-y-12 w-full">
           {/* Encryption Section */}
-          <div className="bg-white rounded-xl p-4 md:p-6  text-gray-800 w-full">
+          <div className="bg-white rounded-xl p-4 md:p-6 text-gray-800 w-full">
             <h2 className="text-3xl font-semibold mb-6">Encrypt Your Text</h2>
             <textarea
               placeholder="Enter text to encrypt..."
@@ -89,7 +88,7 @@ const Encrypt = () => {
             />
             <button
               onClick={decrypt}
-              className="mt-6 w-full bg-red-700 text-white py-3 rounded-lg text-xl font-medium  transform hover:scale-105 transition-transform duration-300"
+              className="mt-6 w-full bg-red-700 text-white py-3 rounded-lg text-xl font-medium transform hover:scale-105 transition-transform duration-300"
             >
               Decrypt Now
             </button>
@@ -101,44 +100,35 @@ const Encrypt = () => {
               rows="4"
             />
           </div>
-          
         </div>
 
-        {/* Results Section */ }
+        {/* Results Section */}
         <div className="sm:w-full">
-        <div className=" rounded-xl p-3 md:p-6 shadow-md text-gray-800 bg-white space-y-6">
-          <h3 className="text-3xl font-semibold mb-6">Results Overview</h3>
-          <div className="grid grid-cols-2 gap-4 md:gap-8">
-            <div className="bg-gradient-to-r from-purple-100 to-pink-100 py-6  rounded-lg flex items-center justify-center flex-col">
-              <h4 className="text-lg font-bold">Plaintext Size</h4><br/>
-              <p className="md:text-3xl text-xl font-bold text-gray-800">{plaintextSize} bytes</p>
+          <div className="rounded-xl p-3 md:p-6 shadow-md text-gray-800 bg-white space-y-6">
+            <h3 className="text-3xl font-semibold mb-6">Results Overview</h3>
+            <div className="grid grid-cols-2 gap-4 md:gap-8">
+              <div className="bg-gradient-to-r from-purple-100 to-pink-100 py-6 rounded-lg flex items-center justify-center flex-col">
+                <h4 className="text-lg font-bold">Plaintext Size</h4><br/>
+                <p className="md:text-3xl text-xl font-bold text-gray-800">{plaintextSize} bytes</p>
+              </div>
+              <div className="bg-gradient-to-r from-purple-100 to-pink-100 py-6 rounded-lg flex items-center justify-center flex-col">
+                <h4 className="text-lg font-bold">Ciphertext Size</h4><br/>
+                <p className="md:text-3xl text-xl font-bold text-gray-800">{ciphertextSize} bytes</p>
+              </div>
+              <div className="bg-gradient-to-r from-green-100 to-blue-100 py-6 rounded-lg flex items-center justify-center flex-col">
+                <h4 className="text-lg font-bold">Encryption Time</h4><br/>
+                <p className="md:text-3xl text-xl font-bold text-gray-800">{encryptionTime.toFixed(2)} ms</p>
+              </div>
+              <div className="bg-gradient-to-r from-green-100 to-blue-100 py-6 rounded-lg flex items-center justify-center flex-col">
+                <h4 className="md:text-lg text-base font-bold">Decryption Time</h4><br/>
+                <p className="md:text-3xl text-xl font-bold text-gray-800">{decryptionTime.toFixed(2)} ms</p>
+              </div>
             </div>
-            <div className="bg-gradient-to-r from-purple-100 to-pink-100 py-6  rounded-lg flex items-center justify-center flex-col">
-              <h4 className="text-lg font-bold">Ciphertext Size</h4><br/>
-              <p className="md:text-3xl text-xl font-bold text-gray-800">{ciphertextSize} bytes</p>
-            </div>
-            <div className="bg-gradient-to-r from-green-100 to-blue-100 py-6  rounded-lg flex items-center justify-center flex-col">
-              <h4 className="text-lg font-bold">Encryption Time</h4><br/>
-              <p className="md:text-3xl text-xl font-bold text-gray-800">{encryptionTime.toFixed(2)} ms</p>
-            </div>
-            <div className="bg-gradient-to-r from-green-100 to-blue-100 py-6  rounded-lg flex items-center justify-center flex-col">
-              <h4 className="md:text-lg text-base font-bold">Decryption Time</h4><br/>
-              <p className="md:text-3xl text-xl font-bold text-gray-800">{decryptionTime.toFixed(2)} ms</p>
-            </div>
-          </div></div>
+          </div>
         </div>
       </div>
-      <Link to="/des">
-          <div className="animate-slidein ... inline-flex items-center justify-center mt-12 w-full p-4 mb-3 font-medium
-              tracking-wide text-white transition duration-200 rounded-lg md:w-auto
-              md:mr-4 md:mb-0 bg-purple-600 hover:bg-purple-700 focus:shadow-outline focus:outline-none">
-        
-              <span className="">Try Des Algorithm</span>
-            
-        </div>
-      </Link>
     </div>
   );
 };
 
-export default Encrypt;
+export default Des;
