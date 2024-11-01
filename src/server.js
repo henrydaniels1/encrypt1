@@ -1,9 +1,8 @@
-// server.js
-const express = require('express');
-const mongoose = require('mongoose');
-const bodyParser = require('body-parser');
-const cors = require('cors');
-const CryptoJS = require('crypto-js');
+import express from 'express';
+import mongoose from 'mongoose';
+import bodyParser from 'body-parser';
+import cors from 'cors';
+import CryptoJS from 'crypto-js';
 
 const app = express();
 const PORT = 5000;
